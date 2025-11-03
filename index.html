@@ -33,11 +33,57 @@
 
 <body>
 
+       <div class="container-fluid">
+         <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" ></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" ></button>
+            
+            </div>
+             <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="principal.jpg" class="d-block w-100" alt="Paisaje 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Atardecer en el lago</h5>
+                    </div>
+                </div>
 
-    <div class="contenedor container-fluid">
+                <div class="carousel-item " data-bs-interval="3000">
+                    <img src="producto3.jpg" class="d-block w-100" alt="Paisaje 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Vista del club de golf</h5>
+                    </div>
+                </div>
+
+                <div class="carousel-item "data-bs-interval="3000">
+                    <img src="galeria_07.jpg" class="d-block w-100" alt="Paisaje 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Playa durante al dia</h5>
+                    </div>
+                </div>
+                </div>
+
+         </div>
+
+         <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon "></span> 
+             <span class="visually-hidden">Previo</span> 
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon "></span> 
+            <span class="visually-hidden">Siguiente</span> 
+        </button>
+          </div> 
+
+    </div>
+
+
+    <!--<div class="contenedor container-fluid">
         <div class="hero">
         </div>
-    </div>
+    </div> -->
 
     <h2 class="titulo">Nuestros Productos</h2>
     
@@ -45,7 +91,7 @@
     <div class="row producto1">
         
         <!-- Imagen 2/3 en desktop -->
-        <div class="col-12 col-lg-8 imgproducto1 "></div>
+        <div class="col-12 col-lg-8 imgproducto1 overflow-hidden imagen-efecto"></div>
 
         <!-- Info 1/3 en desktop -->
         <div class="col-12 col-lg-4 info">
@@ -63,7 +109,7 @@
     <!-- Producto 2 -->
     <div class="col-12 col-md-6 d-flex">
       <div class="producto-card flex-fill">
-        <div class="producto-img imgproducto2"></div>
+        <div class="producto-img imgproducto2 overflow-hidden imagen-efecto"></div>
         <div class="producto-info">
           <h3>Producto 2</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
@@ -76,7 +122,7 @@
     <!-- Producto 3 -->
     <div class="col-12 col-md-6 d-flex">
       <div class="producto-card flex-fill">
-        <div class="producto-img imgproducto3"></div>
+        <div class="producto-img imgproducto3 overflow-hidden imagen-efecto"></div>
         <div class="producto-info">
           <h3>Producto 3</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
@@ -94,7 +140,7 @@
 
         <div class="col-12 col-md-4 d-flex">
             <div class="producto-card flex-fill">
-                <div class="producto-img imgproducto4">
+                <div class="producto-img imgproducto4 overflow-hidden imagen-efecto">
         
                 </div>
                 <div class="producto-info">
@@ -108,7 +154,7 @@
 
             <div class="col-12 col-md-4 d-flex">
             <div class="producto-card flex-fill">
-                <div class="producto-img imgproducto5">
+                <div class="producto-img imgproducto5 overflow-hidden imagen-efecto">
         
                 </div>
                 <div class="producto-info">
@@ -122,7 +168,7 @@
 
             <div class="col-12 col-md-4 d-flex">
             <div class="producto-card flex-fill">
-                <div class="producto-img imgproducto6">
+                <div class="producto-img imgproducto6 overflow-hidden imagen-efecto">
         
                 </div>
                 <div class="producto-info">
@@ -147,7 +193,7 @@
 
         <div class="col-12 col-md-4 d-flex">
         <div class="producto-card flex-fill">
-        <div class="producto-img img1"></div>
+        <div class="producto-img img1 overflow-hidden imagen-zoom"></div>
              <div class="categoria">
             <h3>Oficina</h3>
             </div>
@@ -156,7 +202,7 @@
 
         <div class="col-12 col-md-4 d-flex">
         <div class="producto-card flex-fill">
-        <div class="producto-img img2"></div>
+        <div class="producto-img img2 overflow-hidden imagen-zoom"></div>
         <div class="categoria">
             <h3>Hogar</h3>
         </div>
@@ -164,7 +210,7 @@
         </div>
         
         <div class="col-12 col-md-4 d-flex">
-         <div class="producto-card flex-fill">
+         <div class="producto-card flex-fill overflow-hidden imagen-zoom">
         <div class="producto-img img3"></div>
             <div class="categoria">
             <h3>Cocina</h3>
@@ -177,12 +223,12 @@
 
    
 
-    <footer class="container-xl">
-        <div class="links">
-        <div>
-        <h3>Categorias</h3>
+    <footer class="container-xl mt-4">
+        <div class="row g-4 justify-content-center">
+        <div class="col-12 col-md-4 text-center ">
+        <h3 class="mb-3">Categorias</h3>
         <nav>
-            <ul>
+            <ul class="list-unstyled">
                 <li><a href="#cocina"  class="text-decoration-none text-dark">Cocina</a></li>
                 <li><a href="#oficina"  class="text-decoration-none text-dark">Oficina</a></li>
                 <li><a href="#jardin"  class="text-decoration-none text-dark">Jardin</a></li>
@@ -191,10 +237,10 @@
             </ul>
         </nav>
         </div>
-        <div>
-        <h3>Sobre Nosotros</h3>
+        <div class="col-12 col-md-4 text-center ">
+        <h3 class="mb-3">Sobre Nosotros</h3>
         <nav>
-            <ul>
+            <ul class="list-unstyled">
                 <li><a href="#historia"  class="text-decoration-none text-dark">Nuestra historia</a></li>
                 <li><a href="#mision"  class="text-decoration-none text-dark">Misión, visión y valores</a></li>
                 <li><a href="#carrera"  class="text-decoration-none text-dark">Carrera</a></li>
@@ -203,10 +249,10 @@
             </ul>
         </nav>
         </div>
-        <div>
-        <h3>Soporte</h3>
+        <div class="col-12 col-md-4 text-center ">
+        <h3 class="mb-3">Soporte</h3>
         <nav>
-            <ul>
+            <ul class="list-unstyled">
                 <li><a href="#preguntas" class="text-decoration-none text-dark">Preguntas frecuentes</a></li>
                 <li><a href="#ayuda"  class="text-decoration-none text-dark">Ayuda en línea</a></li>
                 <li><a href="#carrera"  class="text-decoration-none text-dark">Carrera</a></li>
