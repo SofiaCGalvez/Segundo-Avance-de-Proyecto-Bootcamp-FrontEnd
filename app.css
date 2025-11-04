@@ -12,6 +12,12 @@
     background-size: cover;
 }*/
 
+.offcanvas.offcanvas-top {
+  height: 100vh !important; /* Full screen */
+  background-color: #2E3A66; /* Azul marino */
+  color: #ddd;
+}
+
 .carousel-item {
     height: 600px; /* Ajusta el alto que quieras */
 }
@@ -21,6 +27,8 @@
     width: 100%;
     object-fit: cover;  /* Hace que todas las imágenes se adapten sin deformarse */
 }
+
+
 
 .titulo{
     text-align: center;
