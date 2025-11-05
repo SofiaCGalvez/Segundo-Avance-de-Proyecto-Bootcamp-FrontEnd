@@ -19,6 +19,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     Mobile -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  
+
 </head>
 
 
@@ -29,7 +32,7 @@
  <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <!-- Logo -->
-    <a class="navbar-brand" href="#">Tienda de <span style="color:#037BC0">Muebles</span></a>
+    <a style="font-size: xx-large;" class="navbar-brand" href="#">Tienda de <span style="color:#C19A63">Muebles</span></a>
 
     <!-- Botón Mobile -->
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuMobile" aria-controls="menuMobile">
@@ -38,32 +41,62 @@
 
     <!-- Menu Desktop -->
     <div class="collapse navbar-collapse">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Tienda</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Galeria</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link mx-3" href="#">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link mx-3" href="#">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link mx-3" href="#">Tienda</a></li>
+        <li class="nav-item"><a class="nav-link mx-3" href="#">Blog</a></li>
+        <li class="nav-item"><a class="nav-link mx-3" href="#">Galeria</a></li>
+        <li class="nav-item"><a class="nav-link mx-3" href="#">Contacto</a></li>
       </ul>
+
+        <!-- Buscador -->
+      <form class="d-flex mx-3" role="search">
+        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
+        <i class="bi bi-search fs-5 me-2 "></i>
+      </form>
+
+      <!-- ICONOS -->
+      <div class="d-flex align-items-center gap-3 header-icons">
+
+        <!-- Catálogo -->
+        <a href="#" class="text-dark text-decoration-none d-flex align-items-center">
+          <i class="bi bi-grid fs-5 me-1 "></i>
+          <span class="d-none d-lg-inline">Catálogo</span>
+        </a>
+
+        <!-- Cuenta -->
+        <a href="#" class="text-dark text-decoration-none" data-bs-toggle="modal" data-bs-target="#loginModal">
+          <i class="bi bi-person fs-5 me-1"></i>
+        </a>
+
+        <!-- Carrito -->
+        <a href="#" class="text-dark text-decoration-none position-relative">
+          <i class="bi bi-cart fs-5 me-1"></i>
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            2
+          </span>
+        </a>
     </div>
   </div>
 </nav>
 
+
 <!-- MENÚ MOBILE OFFCANVAS -->
 <div class="offcanvas offcanvas-top" tabindex="-1" id="menuMobile" aria-labelledby="menuMobileLabel">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="menuMobileLabel">Tienda de <span style="color:#037BC0">Muebles</span></h5>
+    <h5 style="color: black; font-size: xx-large;" class="offcanvas-title" id="menuMobileLabel">Tienda de Muebles</h5>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
 
   <div class="offcanvas-body d-flex flex-column align-items-center gap-3">
-    <a class="nav-link" href="#">Inicio</a>
-    <a class="nav-link" href="#">Nosotros</a>
-    <a class="nav-link" href="#">Tienda</a>
-    <a class="nav-link" href="#">Blog</a>
-    <a class="nav-link" href="#">Galeria</a>
-    <a class="nav-link" href="#">Contacto</a>
+    <a style="font-size: larger;" class="nav-link mb-3" href="index.html">Inicio</a>
+    <a style="font-size: larger;" class="nav-link mb-3" href="#">Nosotros</a>
+    <a style="font-size: larger;" class="nav-link mb-3" href="#">Tienda</a>
+    <a style="font-size: larger;" class="nav-link mb-3" href="#">Blog</a>
+    <a style="font-size: larger;" class="nav-link mb-3" href="#">Galeria</a>
+    <a style="font-size: larger;" class="nav-link mb-3" href="#">Contacto</a>
+    <p class="mt-auto"><small style="display: block; text-align: center;" class="container-fluid">Todos los derechos reservados. TiendaMuebles</small></p>
   </div>
 </div>
 
@@ -82,21 +115,21 @@
                 <div class="carousel-item active" data-bs-interval="3000">
                     <img src="principal.jpg" class="d-block w-100" alt="Paisaje 1">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Atardecer en el lago</h5>
+                        <h3 class="carousel-title" style="color:black">Sala Modular “Blue Ocean”</h3>
                     </div>
                 </div>
 
                 <div class="carousel-item " data-bs-interval="3000">
                     <img src="producto3.jpg" class="d-block w-100" alt="Paisaje 2">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Vista del club de golf</h5>
+                        <h3 class="carousel-title" style="color:black">Recámara “Nordic Compact”</h3>
                     </div>
                 </div>
 
                 <div class="carousel-item "data-bs-interval="3000">
                     <img src="galeria_07.jpg" class="d-block w-100" alt="Paisaje 3">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Playa durante al dia</h5>
+                        <h3 class="carousel-title" style="color:black">Comedor Familiar "Snow White"</h3>
                     </div>
                 </div>
                 </div>
@@ -117,11 +150,6 @@
 
 
 
-    <!--<div class="contenedor container-fluid">
-        <div class="hero">
-        </div>
-    </div> -->
-
     <h2 class="titulo">Nuestros Productos</h2>
     
     <div class="container my-4">
@@ -131,7 +159,7 @@
         <div class="col-12 col-lg-8 producto-img imgproducto1 overflow-hidden imagen-efecto"></div>
 
         <!-- Info 1/3 en desktop -->
-        <div class="col-12 col-lg-4 producto-info">
+        <div class="col-12 col-lg-4 info">
             <h3>Recámara “Nordic Compact”</h3>
             <p>Aprovecha cada espacio con esta recámara de estilo nórdico minimalista. Incluye cama individual, escritorio integrado y almacenamiento superior.</p>
             <p class="precio">$18,900.00</p>
@@ -208,8 +236,8 @@
         
                 </div>
                 <div class="producto-info">
-                <h3>Producto 6</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod iaculis urna, at viverra felis suscipit ut. Sed ipsum tellus, euismod vitae </p>
+                <h3>Sofá “Grayston Vintage”</h3>
+                <p>El Sofá Grayston Vintage combina elegancia clásica con un toque contemporáneo. Tapizado en un tono gris neutro de textura suave, aporta calidez y estilo a cualquier sala. </p>
                 <p class="precio">$12.000.00</p>
                 <button class="button" type="button">Agregar al carrito</button>
                 </div>
@@ -257,52 +285,154 @@
     </div>
     </div>
 
-   
+   <footer class="container-xl mt-4">
+  <div class="row g-4 justify-content-center">
 
-    <footer class="container-xl mt-4">
-        <div class="row g-4 justify-content-center">
-        <div class="col-12 col-md-4 text-center ">
-        <h3 class="mb-3">Categorias</h3>
+    <!-- CATEGORÍAS -->
+    <div class="col-12 col-md-3">
+      <button style="color: #C19A63; font-size: large;" class="btn w-100 d-md-none d-flex justify-content-center align-items-center gap-2" 
+              type="button" data-bs-toggle="collapse" data-bs-target="#footerCategorias">
+        Categorías
+
+      </button>
+
+      <div class="collapse d-md-block text-center" id="footerCategorias">
+        <h3 class="mb-3 d-none d-md-block">Categorías</h3>
         <nav>
-            <ul class="list-unstyled">
-                <li><a href="#cocina"  class="text-decoration-none text-dark">Cocina</a></li>
-                <li><a href="#oficina"  class="text-decoration-none text-dark">Oficina</a></li>
-                <li><a href="#jardin"  class="text-decoration-none text-dark">Jardin</a></li>
-                <li><a href="#cochera"  class="text-decoration-none text-dark">Cochera</a></li>
-                <li><a href="#dormitorios"  class="text-decoration-none text-dark">Dormitorios</a></li>
-            </ul>
+          <ul class="list-unstyled">
+            <li><a href="#cocina" class="text-decoration-none text-dark">Cocina</a></li>
+            <li><a href="#oficina" class="text-decoration-none text-dark">Oficina</a></li>
+            <li><a href="#jardin" class="text-decoration-none text-dark">Jardín</a></li>
+            <li><a href="#cochera" class="text-decoration-none text-dark">Cochera</a></li>
+            <li><a href="#dormitorios" class="text-decoration-none text-dark">Dormitorios</a></li>
+          </ul>
         </nav>
-        </div>
-        <div class="col-12 col-md-4 text-center ">
-        <h3 class="mb-3">Sobre Nosotros</h3>
-        <nav>
-            <ul class="list-unstyled">
-                <li><a href="#historia"  class="text-decoration-none text-dark">Nuestra historia</a></li>
-                <li><a href="#mision"  class="text-decoration-none text-dark">Misión, visión y valores</a></li>
-                <li><a href="#carrera"  class="text-decoration-none text-dark">Carrera</a></li>
-                <li><a href="#politicas"  class="text-decoration-none text-dark">Políticas de privacidad</a></li>
-                <li><a href="#terminos"  class="text-decoration-none text-dark">Términos del servicio.</a></li>
-            </ul>
-        </nav>
-        </div>
-        <div class="col-12 col-md-4 text-center ">
-        <h3 class="mb-3">Soporte</h3>
-        <nav>
-            <ul class="list-unstyled">
-                <li><a href="#preguntas" class="text-decoration-none text-dark">Preguntas frecuentes</a></li>
-                <li><a href="#ayuda"  class="text-decoration-none text-dark">Ayuda en línea</a></li>
-                <li><a href="#carrera"  class="text-decoration-none text-dark">Carrera</a></li>
-                <li><a href="#politicas"  class="text-decoration-none text-dark">Políticas de privacidad</a></li>
-                <li><a href="#confianza"  class="text-decoration-none text-dark">Confianza y seguridad</a></li>
-            </ul>
-        </nav>
+      </div>
     </div>
+
+    <!-- SOBRE NOSOTROS -->
+    <div class="col-12 col-md-3">
+      <button style="color: #C19A63; font-size: large;" class="btn w-100 d-md-none d-flex justify-content-center align-items-center gap-2" 
+              type="button" data-bs-toggle="collapse" data-bs-target="#footerNosotros">
+        Sobre Nosotros
+      </button>
+
+      <div class="collapse d-md-block text-center" id="footerNosotros">
+        <h3 class="mb-3 d-none d-md-block">Sobre Nosotros</h3>
+        <nav>
+          <ul class="list-unstyled">
+            <li><a href="#historia" class="text-decoration-none text-dark">Nuestra historia</a></li>
+            <li><a href="#mision" class="text-decoration-none text-dark">Misión, visión y valores</a></li>
+            <li><a href="#carrera" class="text-decoration-none text-dark">Carrera</a></li>
+            <li><a href="#politicas" class="text-decoration-none text-dark">Políticas de privacidad</a></li>
+            <li><a href="#terminos" class="text-decoration-none text-dark">Términos del servicio</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
-        <p><small style="display: block; text-align: center;" class="container-fluid">Todos los derechos reservados. TiendaMuebles</small></p>
-    </footer>
+
+    <!-- SOPORTE -->
+    <div class="col-12 col-md-3">
+      <button style="color: #C19A63; font-size: large;" class="btn w-100 d-md-none d-flex justify-content-center align-items-center gap-2" 
+              type="button" data-bs-toggle="collapse" data-bs-target="#footerSoporte">
+        Soporte
+
+      </button>
+
+      <div class="collapse d-md-block text-center" id="footerSoporte">
+        <h3 class="mb-3 d-none d-md-block">Soporte</h3>
+        <nav>
+          <ul class="list-unstyled">
+            <li><a href="#preguntas" class="text-decoration-none text-dark">Preguntas frecuentes</a></li>
+            <li><a href="#ayuda" class="text-decoration-none text-dark">Ayuda en línea</a></li>
+            <li><a href="#carrera" class="text-decoration-none text-dark">Carrera</a></li>
+            <li><a href="#politicas" class="text-decoration-none text-dark">Políticas de privacidad</a></li>
+            <li><a href="#confianza" class="text-decoration-none text-dark">Confianza y seguridad</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- OFERTAS / NEWSLETTER -->
+    <div class="col-12 col-md-3">
+      <button style="color: #C19A63; font-size: large;" class="btn w-100 d-md-none d-flex justify-content-center align-items-center gap-2" 
+              type="button" data-bs-toggle="collapse" data-bs-target="#footerOfertas">
+        Obtén las mejores ofertas
+
+      </button>
+
+      <div class="collapse d-md-block text-center" id="footerOfertas">
+        <h3 class="mb-3 d-none d-md-block fw-semibold">Obtén las mejores ofertas</h3>
+        <p class="mb-3">Suscríbete y recibe promociones, descuentos y novedades exclusivas.</p>
+
+        <form class="d-flex flex-column gap-2">
+          <input type="email" class="form-control" placeholder="Ingresa tu correo" required>
+          <button class="btn btn-dark">Suscribirse</button>
+        </form>
+
+        <div class="mt-3 d-flex justify-content-center gap-3">
+          <a href="#" class="text-dark fs-5"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-dark fs-5"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="text-dark fs-5"><i class="bi bi-pinterest"></i></a>
+          <a href="#" class="text-dark fs-5"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-dark fs-5"><i class="bi bi-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="text-center mt-4"><small>Todos los derechos reservados. TiendaMuebles</small></p>
+</footer>
+
     <h1></h1>  
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 
+
+
+        <!-- Modal Login / Registro -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-3">
+
+      <div class="modal-header border-0">
+        <h5 class="modal-title fw-bold" id="loginModalLabel">Mi Cuenta</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <!-- Sección Clientes Registrados -->
+        <div class="mb-4 pb-3 border-bottom">
+          <h6 class="fw-bold mb-3">Clientes Registrados</h6>
+
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" placeholder="Ingresa tu correo">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Contraseña</label>
+              <input type="password" class="form-control" placeholder="Ingresa tu contraseña">
+            </div>
+
+            <button type="submit" class="btn btn-custom w-100 mb-2">Iniciar Sesión</button>
+            <a href="#" class="d-block text-center small text-decoration-none">¿Olvidaste tu contraseña?</a>
+          </form>
+        </div>
+
+        <!-- Sección Nuevos Clientes -->
+        <div>
+          <h6 class="fw-bold mb-3">¿Nuevo en la tienda?</h6>
+          <p class="small">Si no tienes una cuenta aún, puedes crearla ahora mismo para disfrutar de una mejor experiencia.</p>
+          <button class="btn btn-custom w-100">Crear Cuenta</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
